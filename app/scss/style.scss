@@ -1,0 +1,15 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  margin: 0;
+}
+body{
+  background-color: #000;
+}
+.box{
+  display: flex;
+  transition: all .3s;
+}
