@@ -2,6 +2,9 @@
 @import 'global';
 @import 'fonts';
 
+/* -------------------------------------------------------------------------- */
+/*                                >Start Header                               */
+/* -------------------------------------------------------------------------- */
 
 .header {
  
@@ -39,8 +42,6 @@
     background-color: $bg;
   }
 }
-// .basket {
-// }
 .menu {
   height: 60px;
   display: flex;
@@ -57,6 +58,14 @@
     color: #fff;
   }
 }
+
+/* ------------------------------- End header ------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------- Start searh ------------------------------ */
+
+
 .search{
   background-size: cover;
   background-repeat: no-repeat;
@@ -114,3 +123,165 @@
     }
   }
 }
+
+/* ------------------------------- End search ------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+
+/* ----------------------------- Start  products ---------------------------- */
+
+.products{
+padding: 110px 0;
+background-color: $grey;
+}
+.products__inner-btn{
+  text-align: center;
+  margin-bottom: 60px;
+  button{
+    border: none;
+    padding: 12px 20px;
+    background-color: #fff;
+    color: $bg;
+    cursor: pointer;
+    &.mixitup-control-active{
+        background-color: $red;
+        color: #fff;
+      }
+  }
+  button:not(:last-child){
+    margin-right: 5px;
+  }
+}
+.products__inner-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product__item{
+  max-width: 442px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  margin-bottom: 30px;
+  &-img{ 
+  min-height: 250px;
+  background-color: #d4d4d4;
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  }
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    min-height: 90px;
+    font-weight: 500;
+    border-bottom: 1px solid #e7ecf2;
+  }
+  &-name{
+    min-width: 310px;
+  }
+  &-title{
+    display: block;
+    color: $bg;
+    font-size: 18px;
+
+  }
+  &-category{
+    display: block;
+    color: $green;
+    font-size: 14px;
+  }
+  &-price{
+    font-size: 20px;
+    color: $bg;
+    font-weight: 500;
+  }
+  &-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    min-height: 70px;
+  }
+  &-author{
+    display: flex;
+    align-items:center;
+    min-width: 245px;
+    .avatar{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+      margin-right: 14px;
+    }
+    span{
+      color: $text;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  &-star{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    span{
+      color: $bg;
+      font-weight: 700; 
+    }
+  }
+}
+.products__bottom-btn{
+  text-align: center;
+    button{
+      margin: 45px 5px 0;
+      background-color: #fff;
+      box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+      border: none;
+      color: $bg;
+      padding: 20px 30px;
+      cursor: pointer;
+      &.mixitup-control-active{
+        background-color: $red;
+        color: #fff;
+      }
+     }
+  }
+
+/* ------------------------------ End products ------------------------------ */
+/* -------------------------------------------------------------------------- */
+/* -------------------------- Start Product Slider -------------------------- */
+
+  .product-slider{
+    padding: 110px 0 120px;
+    .slick-list{
+      margin-bottom: 30px;
+    }
+    .slick-dots{
+      text-align: center;
+      li{
+        display: inline-block;
+          button{
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 0;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #d2d2d2;
+          }
+      }
+      li:not(:last-child){
+        margin-right: 7px;
+      }
+      .slick-active{
+        button{
+          background-color:$green;
+          border: 1px solid $green;
+        }
+      }
+    }
+  }
