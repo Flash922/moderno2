@@ -355,7 +355,6 @@ background-color: $grey;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
   min-height: 750px;
   &__box {
     display: flex;
@@ -387,3 +386,39 @@ background-color: $grey;
   }
 }
 
+
+/* ------------------------------- End Author ------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* ----------------------------- Start tutorial ----------------------------- */
+
+.tutorial {
+  padding-top: 70px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    margin-bottom: 120px;
+  }
+  &__item {
+    cursor: pointer;
+    max-width: 370px;
+    width: 100%;
+  }
+
+}
+.tutorial__item{
+  &-img{
+    min-height: 270px;
+    background-color: #d4d4d4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &-title{
+     background-color: #f8f8f8;
+    @include f700;
+    font-size: 24px;
+    text-align: center;
+    padding: 30px 10px;
+  }
+}
