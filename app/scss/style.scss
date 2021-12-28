@@ -340,3 +340,50 @@ background-color: $grey;
     color: #b0bec5;
   }
 }
+
+/* --------------------------- End Product Slider --------------------------- */
+
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------ Start Author ------------------------------ */
+
+.author {
+  background-image: url(../img/author-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: $grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  min-height: 750px;
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    background-color: $green;
+  }
+  &__box-text {
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 265px;
+    margin-right: 45px;
+    span{
+      @include f700;
+    }
+  }
+  &__box-btn > button{
+    cursor: pointer;
+    color: $bg;
+    font-size: 18px;
+    line-height: 36px;
+    padding: 10px 40px;
+    // width: 230px;
+    border: transparent;
+  }
+}
+
